@@ -3,6 +3,8 @@ import { ABWAB, TOTAL_MASAIL_COUNT } from './data/abwab';
 import { BaabDetailView } from './components/BaabDetailView';
 import { BookmarksView } from './components/BookmarksView';
 import { MainPage } from './components/MainPage';
+import { OfflineIndicator } from './components/OfflineIndicator';
+import { PWAInstallButton } from './components/PWAInstallButton';
 import { TopBar } from './components/TopBar';
 import { AppView, FontScale, ReadingTheme, ScriptStyle } from './types/bahar';
 
@@ -240,9 +242,12 @@ export default function App() {
             >
               نشان زدہ مسائل
             </button>
+            <PWAInstallButton variant="link" />
           </div>
         </div>
       </footer>
+
+      <OfflineIndicator />
     </div>
   );
 }

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#14532D" />
+  <rect x="34" y="34" width="444" height="444" rx="72" fill="none" stroke="#D4AF37" stroke-width="8" stroke-opacity="0.7" />
+  <!-- Islamic 8-point geometric frame -->
+  <rect x="136" y="136" width="240" height="240" rx="18" fill="none" stroke="#FBF9F5" stroke-width="10" stroke-opacity="0.9" />
+  <rect x="136" y="136" width="240" height="240" rx="18" transform="rotate(45 256 256)" fill="none" stroke="#D4AF37" stroke-width="10" stroke-opacity="0.9" />
+  <!-- Open Book Icon -->
+  <path d="M256 208 C230 192 192 192 164 202 L164 318 C192 308 230 308 256 324 C282 308 320 308 348 318 L348 202 C320 192 282 192 256 208 Z" fill="#FBF9F5" />
+  <line x1="256" y1="208" x2="256" y2="324" stroke="#14532D" stroke-width="8" />
+  <line x1="186" y1="236" x2="236" y2="238" stroke="#14532D" stroke-width="7" stroke-linecap="round" />
+  <line x1="186" y1="264" x2="236" y2="266" stroke="#14532D" stroke-width="7" stroke-linecap="round" />
+  <line x1="186" y1="292" x2="232" y2="294" stroke="#14532D" stroke-width="7" stroke-linecap="round" />
+  <line x1="276" y1="238" x2="326" y2="236" stroke="#14532D" stroke-width="7" stroke-linecap="round" />
+  <line x1="276" y1="266" x2="326" y2="264" stroke="#14532D" stroke-width="7" stroke-linecap="round" />
+  <line x1="280" y1="294" x2="326" y2="292" stroke="#14532D" stroke-width="7" stroke-linecap="round" />
+</svg>

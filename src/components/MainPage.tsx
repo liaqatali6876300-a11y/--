@@ -3,6 +3,7 @@ import { ArrowLeft, Moon, Search, Sun, X } from 'lucide-react';
 import { ABWAB, ALL_MASAIL, TOTAL_MASAIL_COUNT } from '../data/abwab';
 import { FontScale, ReadingTheme, ScriptStyle } from '../types/bahar';
 import { MasalaCard } from './MasalaCard';
+import { PWAInstallButton } from './PWAInstallButton';
 
 interface MainPageProps {
   searchQuery: string;
@@ -164,6 +165,9 @@ export const MainPage: React.FC<MainPageProps> = ({
         </div>
       </section>
 
+      {/* In-App PWA Install Banner */}
+      <PWAInstallButton variant="banner" />
+
       {/* Workspace Display Preferences Bar (Script, Size, Dark Mode) */}
       <div className="mt-6 flex flex-wrap items-center justify-between gap-3 border-b border-stone-200 pb-4 dark:border-stone-800">
         <div className="flex flex-wrap items-center gap-2.5">
@@ -216,23 +220,27 @@ export const MainPage: React.FC<MainPageProps> = ({
           </div>
         </div>
 
-        <button
-          type="button"
-          onClick={onToggleTheme}
-          className="font-naskh inline-flex items-center gap-2 rounded-lg border border-stone-300 bg-[#FBF9F5] px-4 py-2 text-sm sm:text-base font-bold text-stone-800 transition-colors hover:bg-stone-100 dark:border-stone-700 dark:bg-[#1E1B18] dark:text-stone-100 dark:hover:bg-stone-800 whitespace-nowrap shrink-0 cursor-pointer"
-        >
-          {theme === 'dark' ? (
-            <>
-              <Sun className="h-5 w-5 text-amber-400" />
-              <span>روشن موڈ</span>
-            </>
-          ) : (
-            <>
-              <Moon className="h-5 w-5 text-stone-700" />
-              <span>شبینہ موڈ</span>
-            </>
-          )}
-        </button>
+        <div className="flex flex-wrap items-center gap-2.5">
+          <PWAInstallButton variant="button" />
+
+          <button
+            type="button"
+            onClick={onToggleTheme}
+            className="font-naskh inline-flex items-center gap-2 rounded-lg border border-stone-300 bg-[#FBF9F5] px-4 py-2 text-sm sm:text-base font-bold text-stone-800 transition-colors hover:bg-stone-100 dark:border-stone-700 dark:bg-[#1E1B18] dark:text-stone-100 dark:hover:bg-stone-800 whitespace-nowrap shrink-0 cursor-pointer"
+          >
+            {theme === 'dark' ? (
+              <>
+                <Sun className="h-5 w-5 text-amber-400" />
+                <span>روشن موڈ</span>
+              </>
+            ) : (
+              <>
+                <Moon className="h-5 w-5 text-stone-700" />
+                <span>شبینہ موڈ</span>
+              </>
+            )}
+          </button>
+        </div>
       </div>
 
       {/* Instant Live Search Results (appears immediately as user types) */}

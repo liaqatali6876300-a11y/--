@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { AppView } from '../types/bahar';
+import { PWAInstallButton } from './PWAInstallButton';
 
 interface TopBarProps {
   activeView: AppView;
@@ -172,6 +173,9 @@ export const TopBar: React.FC<TopBarProps> = ({
             >
               مسئلہ تلاش کریں
             </button>
+            <div className="mt-1 flex justify-center">
+              <PWAInstallButton variant="button" />
+            </div>
           </nav>
         </div>
       )}
